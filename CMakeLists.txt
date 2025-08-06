@@ -9,9 +9,13 @@ add_executable(OpenGL main.cpp
 
 set(GLFW_DIR "C:/Libs/GLFW")
 set(GLAD_DIR "C:/Libs/GLAD")
+set(VULKAN_SDK_PATH "C:/VulkanSDK/1.4.313.2")
+set(STB_IMAGE_DIR "C:/Libs/STB_IMAGE")
 
 include_directories(${GLFW_DIR}/include)
 include_directories(${GLAD_DIR}/include)
+include_directories(${STB_IMAGE_DIR})
+include_directories(${VULKAN_SDK_PATH}/Include)
 
 target_link_directories(${PROJECT_NAME} PUBLIC ${GLFW_DIR}/lib-mingw-w64)
 
